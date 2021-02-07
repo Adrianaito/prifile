@@ -149,13 +149,17 @@ a:hover {
   color: #69E0FF;
   font-size: 2em;
 }
-/* @media(max-width: 500px) {
-  .footer {
+@media(max-width: 500px) {
+  /* .footer {
     display: grid;
     grid-template-columns:  1fr;
     background-color: white;
-  }
   } */
+  .footer-links a {
+    padding: 16px;
+    font-size: 48px;
+  }
+  }
   /* -------------------------------Footer End------------------------------ */
 
 /*font-family: 'Comic Neue', cursive;
