@@ -115,37 +115,8 @@ a:hover {
 @media(max-width: 800px) {
   .background {
     height: 100vh;
-    /*justify-content: space-around;*/
   }
-  /*.list {
-    list-style: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0;
-    padding: 16px;
-
-    }*/
-  /*.list a {
-    margin: 0 10px;
-    font-size: 2em;
-    }*/
-  }
-/*.footer {
-  width: 100%
-  margin: 0;
 }
-
-.footer h2 {
-  text-align: center;
-  }*/
-
-  /*.banner {
-    position: fixed;
-    }*/
-
-
-
 
 
 /*font-family: 'Comic Neue', cursive;
