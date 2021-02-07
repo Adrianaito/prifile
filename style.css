@@ -10,7 +10,7 @@ body {
 
 p {
   font-family: 'Comic Neue', cursive;
-  color: black;
+  color: pink;
   font-weight: 700;
   font-size: 2em;
   padding: 32px;
@@ -61,7 +61,7 @@ a:hover {
 
 
 .card {
-  width: 600px;
+  width: 752px;
   margin: 32px auto;
   padding: 32px;
   background-color: white;
