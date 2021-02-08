@@ -167,10 +167,10 @@ a:hover {
     font-size: 48px;
   }
   .banner p {
-    font-family: 'Comic Neue', cursive, fantasy;
+    font-family: 'Comic Neue', fantasy, cursive;
 }
 p {
-  font-family: 'Comic Neue', cursive, fantasy;
+  font-family: 'Comic Neue', fantasy, cursive;
 }
 /* -------------------------------Footer End------------------------------ */
 
