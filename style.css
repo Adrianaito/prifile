@@ -1,8 +1,7 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@1,400;1,700&family=Inconsolata:wght@300&family=Noto+Serif&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@1,400;1,700&family=Inconsolata:wght@300&family=Noto+Serif&display=swap");
 
 body {
-  font-family: 'Noto Serif', serif;
+  font-family: "Noto Serif", serif;
   margin: 0;
   padding: 0;
   width: 100%;
@@ -12,7 +11,7 @@ body {
 }
 
 p {
-  font-family: 'Comic Neue', cursive;
+  font-family: "Comic Neue", cursive;
   color: black;
   font-weight: 700;
   font-size: 2em;
@@ -32,7 +31,7 @@ p {
 .banner h1 {
   margin: 0;
   color: white;
-  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
   font-size: 32px;
   font-weight: bold;
   padding-top: 32px;
@@ -41,9 +40,9 @@ p {
 .banner p {
   font-size: 2em;
   color: white;
-  opacity: .7;
-  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
-  font-family: 'Comic Neue', cursive;
+  opacity: 0.7;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+  font-family: "Comic Neue", cursive;
   margin-top: 16px;
 }
 
@@ -53,7 +52,7 @@ p {
   border-radius: 50%;
   object-fit: cover;
   margin-top: 40px;
-  box-shadow: 0 0 8px rgb(0 0 0 / 30%);
+  box-shadow: 0 0 32px rgb(0 0 0 / 30%);
   border: 1px solid white;
 }
 /* -----------------Banner end----------------------- */
@@ -63,7 +62,7 @@ p {
   grid-template-columns: 1fr;
 }
 .card {
-  width: 752px;
+  width: 80%;
   margin: 32px auto;
   padding: 32px;
   background-color: white;
@@ -71,7 +70,6 @@ p {
   text-align: center;
   border-radius: 4px;
   box-shadow: 0 0 8px rgb(0 0 0 / 30%);
-  /*flex-grow: 2;*/
 }
 .card p {
   padding: 0;
@@ -91,76 +89,90 @@ p {
   width: 120px;
   height: 120px;
   margin: 32px auto;
-  -webkit-animation:spin 4s linear infinite;
-  -moz-animation:spin 4s linear infinite;
-  animation:spin 4s linear infinite;
+  -webkit-animation: spin 4s linear infinite;
+  -moz-animation: spin 4s linear infinite;
+  animation: spin 4s linear infinite;
   /*  transition: 2s;*/
 }
-@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
-@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
-@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); }  }
-
-.frog:hover  {
-  -webkit-animation:spin 0s linear infinite;
-  -moz-animation:spin 0s linear infinite;
-  animation:spin 0s linear infinite;
-  content: url('https://cutt.ly/wkbs7ie');
-  width: 200px;
-  height: 200px;
-
+@-moz-keyframes spin {
+  100% {
+    -moz-transform: rotate(360deg);
+  }
 }
-.unicorn:hover  {
-  -webkit-animation:spin 0s linear infinite;
-  -moz-animation:spin 0s linear infinite;
-  animation:spin 0s linear infinite;
-  content: url('https://cutt.ly/CkbdcVI');
+@-webkit-keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+.frog:hover {
+  -webkit-animation: spin 0s linear infinite;
+  -moz-animation: spin 0s linear infinite;
+  animation: spin 0s linear infinite;
+  content: url("https://cutt.ly/wkbs7ie");
   width: 200px;
   height: 200px;
-
+}
+.unicorn:hover {
+  -webkit-animation: spin 0s linear infinite;
+  -moz-animation: spin 0s linear infinite;
+  animation: spin 0s linear infinite;
+  content: url("https://cutt.ly/CkbdcVI");
+  width: 200px;
+  height: 200px;
 }
 /* -----------------------------Footer------------------------ */
 
 .footer {
-  background: #F4F4F4;
+  background: #f4f4f4;
   display: flex;
   align-items: center;
   justify-content: space-between;
   height: 75px;
   padding: 0px 50px;
-  color: rgba(0,0,0,0.3);
+  color: rgba(0, 0, 0, 0.3);
 }
 .footer-links {
   display: flex;
   align-items: center;
 }
 .footer-links a {
-  /* color: black; */
-  /* opacity: 0.15; */
   text-decoration: none;
   font-size: 24px;
   padding: 0px 10px;
-  color: #FF2EBF;
+  color: #ff2ebf;
 }
 .footer-links a:hover {
   opacity: 1;
 }
 
 a:hover {
-  color: #69E0FF;
+  color: #69e0ff;
   font-size: 2em;
 }
-@media(max-width: 500px) {
-  /* .footer {
-    display: grid;
-    grid-template-columns:  1fr;
-    background-color: white;
-  } */
+@media (max-width: 500px) {
+  .footer {
+    display: flex;
+    flex-direction: column;
+    padding: 5px 50px 50px;
+  }
   .footer-links a {
-    padding: 16px;
+    padding: 8px;
     font-size: 48px;
   }
-  }
-  /* -------------------------------Footer End------------------------------ */
+  .banner p {
+    font-family: 'Comic Neue', cursive, fantasy;
+}
+p {
+  font-family: 'Comic Neue', cursive, fantasy;
+}
+/* -------------------------------Footer End------------------------------ */
 
 /*font-family: 'Comic Neue', cursive;
 font-family: 'Inconsolata', monospace;
